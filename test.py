@@ -23,7 +23,7 @@ y = np.cos(2 * np.pi * x) * np.exp(-x)
 
 plt.plot(x, y, 'k')
 plt.title('Damped exponential decay', fontdict=font)
-a = '$\\alpha > \\beta$'
+a = r'$\cos(2 \pi t) \exp(-t)$'
 plt.text(2, 0.65, '%s' %(a) , fontdict=font)
 plt.xlabel('time (s)', fontdict=font)
 plt.ylabel('voltage (mV)', fontdict=font)
