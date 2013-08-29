@@ -1,0 +1,41 @@
+Decimales correctos: 0.5x10^-d tiene d decimales correctos
+Cifras significativas: 5x10^-k tiene k cifras significativas
+
+Propagacion de errores:
+E(x+y) = Ex + Ey
+
+E(x-y) = (x - y) - (xp - yp)
+E(x-y) = (x - xp) + (yp - y)
+       = Ex - Ey
+
+Abs(E_suma) <= Abs(Ex) + Abs(Ey)
+
+er (x+y) = x/(x+y) er(x) + y/(x+y) er(y)
+er (x-y) = x/(x-y) er(x) - y/(x-y) er(y)
+
+E(xy) = xy-xpyp
+      = xy - (x-Ex)(y-Ey)
+      = xEy + yEx - ExEy -> xEy + yEx
+
+
+abs er(xy) <= abs er(x) + abs er(y)
+
+E(x/y) = x/y - xp/yp
+       = xyp - yxp / yyp
+       = x(y-Ey) - y(x-Ex) / y(y-Ey)
+       = xy - xEy - yx + yEx /y(y-Ey)
+       = yEx - xEy/(y(y-Ey))
+       ~ yEx - xEy/(y^2)
+
+er(x/y) = yEx - xEy/(y^2(x/y))
+	= yEx - xEy/ xy
+	= er(x) - er(y)
+abs	<= abs er(x) +abs er(y)
+
+Taylor:
+
+f(x) = sum f^(n)(a) * (x-a)^n / n!
+
+Error de truncamiento:
+
+En taylor, el error de truncamiento coincide con el termino que se an~ade
