@@ -4,18 +4,17 @@ from scipy.integrate import quadrature as quad
 from math import fmod
 
 def fun (x): #test function
-    return x
     x = fmod(x+np.pi,2*np.pi)
     x -= np.pi
     if (-np.pi < x <= 0):
         return -1
     return 1
         
-#f = lambda x: fun(x)
+f = lambda x: fun(x)
 
 print "please enter the function, for special numbers and functions prefix them with np, e.g. np.pi, np.cos(..),"
-f_string = raw_input()
-f = lambda x: eval(f_string)
+#f_string = raw_input()
+#f = lambda x: eval(f_string)
 
 print "please enter the iterations quantity"
 n = input()
@@ -54,6 +53,6 @@ y = map(fou,x)
 #print a
 #print b
 
-plt.plot(x,y,'k')
+plt.plot(x,y,'r')
 plt.show()
 

@@ -1,0 +1,16 @@
+/usr/lib64/python2.7/site-packages/scipy/integrate/quadrature.py:170: AccuracyWarning: maxiter (50) exceeded. Latest difference = 8.077880e-08
+  AccuracyWarning)
+/usr/lib64/python2.7/site-packages/scipy/integrate/quadrature.py:170: AccuracyWarning: maxiter (50) exceeded. Latest difference = 1.753102e-06
+  AccuracyWarning)
+/usr/lib64/python2.7/site-packages/scipy/integrate/quadrature.py:170: AccuracyWarning: maxiter (50) exceeded. Latest difference = 2.913702e-05
+  AccuracyWarning)
+/usr/lib64/python2.7/site-packages/scipy/integrate/quadrature.py:170: AccuracyWarning: maxiter (50) exceeded. Latest difference = 3.744467e-04
+  AccuracyWarning)
+/usr/lib64/python2.7/site-packages/scipy/integrate/quadrature.py:170: AccuracyWarning: maxiter (50) exceeded. Latest difference = 3.745560e-03
+  AccuracyWarning)
+/usr/lib64/python2.7/site-packages/scipy/integrate/quadrature.py:170: AccuracyWarning: maxiter (50) exceeded. Latest difference = 2.926310e-02
+  AccuracyWarning)
+/usr/lib64/python2.7/site-packages/scipy/integrate/quadrature.py:170: AccuracyWarning: maxiter (50) exceeded. Latest difference = 1.785272e-01
+  AccuracyWarning)
+/usr/lib64/python2.7/site-packages/scipy/integrate/quadrature.py:170: AccuracyWarning: maxiter (50) exceeded. Latest difference = 8.463458e-01
+  AccuracyWarning)
