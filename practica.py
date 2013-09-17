@@ -10,11 +10,12 @@ def fun (x): #test function
         return -1
     return 1
         
-f = lambda x: fun(x)
+#f = lambda x: fun(x)
+
 
 print "please enter the function, for special numbers and functions prefix them with np, e.g. np.pi, np.cos(..),"
-#f_string = raw_input()
-#f = lambda x: eval(f_string)
+f_string = raw_input()
+f = lambda x: eval(f_string)
 
 print "please enter the iterations quantity"
 n = input()
@@ -46,13 +47,23 @@ def fou (x):
         res += b[i]*np.sin(i*x)
     return res
 
+print "Please enter range"
 
-x = np.linspace(-2*np.pi, 2*np.pi,500)
+lo = input()
+hi = input()
+#x = np.linspace(-2*np.pi, 2*np.pi,500)
+x = np.linspace(lo,hi,500)
 y = map(fou,x)
+#y = map(fou,x)
 
-#print a
-#print b
+print a
+print b
 
 plt.plot(x,y,'r')
+
+frame1 = plt.gca()
+frame1.axes.get_xaxis().set_visible(False)
+frame1.axes.get_yaxis().set_visible(False)
+
 plt.show()
 

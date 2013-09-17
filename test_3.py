@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 from matplotlib import rc
 
 def f(x):
-    return np.cos(x)
+    return np.cos(3*x)
 
 def g(y):
-    return np.sin(y)
+    return np.sin(2*y)
 
 
 t = np.linspace(0,np.pi*2.0,500)
