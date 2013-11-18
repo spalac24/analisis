@@ -49,8 +49,10 @@ def fou (x):
 
 print "Please enter range"
 
-lo = input()
-hi = input()
+#lo = input()
+#hi = input()
+lo = -3.0*np.pi/2.0
+hi = 3.0*np.pi/2.0
 #x = np.linspace(-2*np.pi, 2*np.pi,500)
 x = np.linspace(lo,hi,500)
 y = map(fou,x)
@@ -61,9 +63,9 @@ print b
 
 plt.plot(x,y,'r')
 
-frame1 = plt.gca()
-frame1.axes.get_xaxis().set_visible(False)
-frame1.axes.get_yaxis().set_visible(False)
+#frame1 = plt.gca()
+#frame1.axes.get_xaxis().set_visible(False)
+#frame1.axes.get_yaxis().set_visible(False)
 
 plt.show()
 

@@ -1,0 +1,15 @@
+import cmath
+
+def omega(p,q):
+    return cmath.exp((2.0* cmath.pi * 1j * q)/p)
+
+def fft(signal):
+    n = len(signal)
+    if n == 1:
+        return signal
+    else:
+        even = fft(signal[0::2])
+        odd = fft(signal[1::2])
+
+        combined = [0]*n
+        f
